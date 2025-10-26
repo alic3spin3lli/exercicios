@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main() {
+    float A,B,S,M;
+    scanf("%f",&A);
+    scanf("%f",&B);
+    S = A + B;
+    M = S / 2;
+    printf("%.5f", M);
+    return 0;
+}
