@@ -1,0 +1,16 @@
+#include <stdio.h>
+ 
+int main() {
+    int cod1, cod2, num1, num2;
+    float preco1, preco2, total;
+    
+    printf("produto 1:");
+    scanf("%d %d %f", &cod1, &num1, &preco1);
+    printf("produto 2:");
+    scanf("%d %d %f", &cod2, &num2, &preco2);
+    
+    total = (num1 * preco1) + (num2 * preco2);
+    printf("Valor a pagar: R$ %.2f\n", total);
+    
+    return 0;
+}
