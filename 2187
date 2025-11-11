@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main() {
+    int V;          // valor cliente
+    int teste = 1;  // contador de testes
+
+    while (1) {
+        scanf("%d", &V);
+
+        if (V == 0)   // interrompe
+            break;
+
+        int n50, n10, n5, n1;
+        
+        n50 = V / 50;
+        V = V % 50;
+        n10 = V / 10;
+        V = V % 10;
+        n5 = V / 5;
+        V = V % 5;
+        n1 = V;
+
+        printf("Teste %d\n", teste); // nº do teste
+        printf("%d %d %d %d\n", n50, n10, n5, n1); // valores calculados
+        printf("\n");
+
+        teste++;
+    }
+
+    return 0;
+}
