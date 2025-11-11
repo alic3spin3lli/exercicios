@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    int a, b, c;
+    int x, y, z;
+
+    scanf("%d %d %d", &a, &b, &c);
+
+    x = a;
+    y = b;
+    z = c;
+
+    int v;
+    if (a > b) { v = a; a = b; b = v; }
+    if (b > c) { v = b; b = c; c = v; }
+    if (a > b) { v = a; a = b; b = v; }
+
+    printf("\n");
+    printf("%d\n%d\n%d\n", a, b, c);
+    printf("\n");
+    printf("%d\n%d\n%d\n", x, y, z);
+
+    return 0;
+}
